@@ -21,8 +21,10 @@
 extern PQauthDataHook_type PQauthDataHook;
 
 
-/* Prototypes for functions in fe-auth.c */
-extern int	pg_fe_sendauth(AuthRequest areq, int payloadlen, PGconn *conn,
+		/* Prototypes for functions in fe-auth.c */
+
+
+extern 			int	pg_fe_sendauth(AuthRequest areq, int payloadlen, PGconn *conn,
 						   bool *async);
 extern char *pg_fe_getusername(uid_t user_id, PQExpBuffer errorMessage);
 extern char *pg_fe_getauthname(PQExpBuffer errorMessage);
