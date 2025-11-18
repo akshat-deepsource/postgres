@@ -5,3 +5,6 @@ name = "cxx"
 
 [[code_formatters]]
 name = "clang-format"
+
+[[transformers]]
+name = "clang-format"
