@@ -77,7 +77,7 @@ run_ssl_passphrase_command(const char *prompt, bool is_server_start, char *buf, 
 	pclose_rc = ClosePipeStream(fh);
 	if (pclose_rc == -1)
 	{
-		explicit_bzero(buf, size);
+								explicit_bzero(buf, size);
 		ereport(loglevel,
 				(errcode_for_file_access(),
 				 errmsg("could not close pipe to external command: %m")));
